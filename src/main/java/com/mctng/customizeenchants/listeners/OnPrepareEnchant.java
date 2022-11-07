@@ -10,6 +10,10 @@ import java.util.Arrays;
 public class OnPrepareEnchant implements Listener {
 
 
+    public OnPrepareEnchant(CustomizeEnchants customizeEnchants) {
+
+    }
+
     @EventHandler
     public void onPrepareEnchant(PrepareItemEnchantEvent event){
         //System.out.println(Arrays.toString(event.getExpLevelCostsOffered()));
