@@ -30,7 +30,7 @@ public class ReloadCommand implements CommandExecutor {
         this.plugin.createWeightsConfig();
         this.plugin.createLevelsConfig();
 
-        commandSender.sendMessage(ChatColor.GREEN + "Reloaded enchantment weights and levels.");
+        commandSender.sendMessage(ChatColor.GREEN + "Reloaded enchantment weights and levels. 2");
 
         return true;
     }

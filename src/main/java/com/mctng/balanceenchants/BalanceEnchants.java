@@ -1,6 +1,8 @@
 package com.mctng.balanceenchants;
 
+import com.mctng.balanceenchants.listeners.OnClick;
 import com.mctng.balanceenchants.listeners.OnEnchant;
+import com.mctng.balanceenchants.listeners.OnPrepareEnchant;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -29,6 +31,7 @@ public final class BalanceEnchants extends JavaPlugin {
         this.conflictingEnchantsMap = generateConflictingEnchantsMap();
         this.getCommand("be").setExecutor(new ReloadCommand(this));
         this.getServer().getPluginManager().registerEvents(new OnEnchant(this), this);
+        this.getServer().getPluginManager().registerEvents(new OnPrepareEnchant(), this);
 
 
     }
@@ -79,7 +82,7 @@ public final class BalanceEnchants extends JavaPlugin {
         this.itemTypesMap.put("ARMOR_BOOTS", new String[]{"BOOTS"," BOOK"});
         this.itemTypesMap.put("ARMOR_HELMET", new String[]{"HELMET", "BOOK"});
 
-        this.itemTypesMap.put("SWORD", new String[]{"SWORD", "BOOK"});
+        this.itemTypesMap.put("SWORD", new String[]{"SWORD", "BOOK", "WHIP"});
 
         this.itemTypesMap.put("BOW", new String[]{"BOW", "BOOK"});
 

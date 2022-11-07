@@ -19,17 +19,20 @@ public class OnEnchant implements Listener {
 
     @EventHandler
     public void onEnchant(EnchantItemEvent event){
+        System.out.println(event.isCancelled());
+        event.setCancelled(false);
+
         double modifiedLevel = Math.round(event.getExpLevelCost() * generateRandomBonus());
 
         if (modifiedLevel < 1) {
             modifiedLevel = 1;
         }
-
-
+        System.out.println(event.getItem().getType());
+        System.out.println(modifiedLevel);
         ArrayList<String> itemTypes = selectItemTypes(event.getItem().getType());
         ArrayList<CustomEnchant> selectedEnchants = selectEnchants(modifiedLevel, itemTypes);
 
-        System.out.println(event.getItem().getType());
+
 
         event.getEnchantsToAdd().clear();
 
