@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.mctng</groupId>
-    <artifactId>customize-enchants</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>BalanceEnchants</artifactId>
+    <version>1.0</version>
 
 
     <properties>

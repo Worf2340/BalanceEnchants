@@ -1,5 +1,5 @@
-name: customizeEnchants
-main: com.mctng.customizeenchants.CustomizeEnchants
+name: BalanceEnchants
+main: com.mctng.balanceenchants.BalanceEnchants
 version: 1.0
 author: Worf2340
 
