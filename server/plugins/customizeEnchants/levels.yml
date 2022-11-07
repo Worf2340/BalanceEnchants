@@ -91,7 +91,7 @@ DIG_SPEED:
       minLevel: 31
       maxLevel: 81
   - 5:
-      minLevel: 41
+      minLevel: 1
       maxLevel: 91
 DURABILITY:
   - 1:

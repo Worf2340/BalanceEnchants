@@ -1,252 +1,252 @@
 ARROW_DAMAGE:
-  1:
-    minLevel: 1
-    maxLevel: 16
-  2:
-    minLevel: 11
-    maxLevel: 26
-  3:
-    minLevel: 21
-    maxLevel: 36
-  4:
-    minLevel: 31
-    maxLevel: 46
-  5:
-    minLevel: 41
-    maxLevel: 56
+  - 1:
+      minLevel: 1
+      maxLevel: 16
+  - 2:
+      minLevel: 11
+      maxLevel: 26
+  - 3:
+      minLevel: 21
+      maxLevel: 36
+  - 4:
+      minLevel: 31
+      maxLevel: 46
+  - 5:
+      minLevel: 41
+      maxLevel: 56
 ARROW_FIRE:
-  1:
-    minLevel: 20
-    maxLevel: 50
+  - 1:
+      minLevel: 20
+      maxLevel: 50
 ARROW_INFINITE:
-  1:
-    minLevel: 20
-    maxLevel: 50
+  - 1:
+      minLevel: 20
+      maxLevel: 50
 ARROW_KNOCKBACK:
-  1:
-    minLevel: 12
-    maxLevel: 37
-  2:
-    minLevel: 32
-    maxLevel: 57
+  - 1:
+      minLevel: 12
+      maxLevel: 37
+  - 2:
+      minLevel: 32
+      maxLevel: 57
 DAMAGE_ALL:
-  1:
-    minLevel: 1
-    maxLevel: 21
-  2:
-    minLevel: 12
-    maxLevel: 32
-  3:
-    minLevel: 23
-    maxLevel: 43
-  4:
-    minLevel: 34
-    maxLevel: 54
-  5:
-    minLevel: 45
-    maxLevel: 65
+  - 1:
+      minLevel: 1
+      maxLevel: 21
+  - 2:
+      minLevel: 12
+      maxLevel: 32
+  - 3:
+      minLevel: 23
+      maxLevel: 43
+  - 4:
+      minLevel: 34
+      maxLevel: 54
+  - 5:
+      minLevel: 45
+      maxLevel: 65
 DAMAGE_ARTHROPODS:
-  1:
-    minLevel: 5
-    maxLevel: 25
-  2:
-    minLevel: 13
-    maxLevel: 33
-  3:
-    minLevel: 21
-    maxLevel: 41
-  4:
-    minLevel: 29
-    maxLevel: 49
-  5:
-    minLevel: 37
-    maxLevel: 57
+  - 1:
+      minLevel: 5
+      maxLevel: 25
+  - 2:
+      minLevel: 13
+      maxLevel: 33
+  - 3:
+      minLevel: 21
+      maxLevel: 41
+  - 4:
+      minLevel: 29
+      maxLevel: 49
+  - 5:
+      minLevel: 37
+      maxLevel: 57
 DAMAGE_UNDEAD:
-  1:
-    minLevel: 5
-    maxLevel: 25
-  2:
-    minLevel: 13
-    maxLevel: 33
-  3:
-    minLevel: 21
-    maxLevel: 41
-  4:
-    minLevel: 29
-    maxLevel: 49
-  5:
-    minLevel: 37
-    maxLevel: 57
+  - 1:
+      minLevel: 5
+      maxLevel: 25
+  - 2:
+      minLevel: 13
+      maxLevel: 33
+  - 3:
+      minLevel: 21
+      maxLevel: 41
+  - 4:
+      minLevel: 29
+      maxLevel: 49
+  - 5:
+      minLevel: 37
+      maxLevel: 57
 DIG_SPEED:
-  1:
-    minLevel: 1
-    maxLevel: 51
-  2:
-    minLevel: 11
-    maxLevel: 61
-  3:
-    minLevel: 21
-    maxLevel: 71
-  4:
-    minLevel: 31
-    maxLevel: 81
-  5:
-    minLevel: 41
-    maxLevel: 91
+  - 1:
+      minLevel: 1
+      maxLevel: 51
+  - 2:
+      minLevel: 11
+      maxLevel: 61
+  - 3:
+      minLevel: 21
+      maxLevel: 71
+  - 4:
+      minLevel: 31
+      maxLevel: 81
+  - 5:
+      minLevel: 41
+      maxLevel: 91
 DURABILITY:
-  1:
-    minLevel: 5
-    maxLevel: 55
-  2:
-    minLevel: 13
-    maxLevel: 63
-  3:
-    minLevel: 21
-    maxLevel: 71
+  - 1:
+      minLevel: 5
+      maxLevel: 55
+  - 2:
+      minLevel: 13
+      maxLevel: 63
+  - 3:
+      minLevel: 21
+      maxLevel: 71
 FIRE_ASPECT:
-  1:
-    minLevel: 10
-    maxLevel: 60
-  2:
-    minLevel: 30
-    maxLevel: 80
+  - 1:
+      minLevel: 10
+      maxLevel: 60
+  - 2:
+      minLevel: 30
+      maxLevel: 80
 KNOCKBACK:
-  1:
-    minLevel: 5
-    maxLevel: 55
-  2:
-    minLevel: 25
-    maxLevel: 75
+  - 1:
+      minLevel: 5
+      maxLevel: 55
+  - 2:
+      minLevel: 25
+      maxLevel: 75
 LOOT_BONUS_BLOCKS:
-  1:
-    minLevel: 15
-    maxLevel: 65
-  2:
-    minLevel: 24
-    maxLevel: 74
-  3:
-    minLevel: 33
-    maxLevel: 83
+  - 1:
+      minLevel: 15
+      maxLevel: 65
+  - 2:
+      minLevel: 24
+      maxLevel: 74
+  - 3:
+      minLevel: 33
+      maxLevel: 83
 LOOT_BONUS_MOBS:
-  1:
-    minLevel: 15
-    maxLevel: 65
-  2:
-    minLevel: 24
-    maxLevel: 74
-  3:
-    minLevel: 33
-    maxLevel: 83
+  - 1:
+      minLevel: 15
+      maxLevel: 65
+  - 2:
+      minLevel: 24
+      maxLevel: 74
+  - 3:
+      minLevel: 33
+      maxLevel: 83
 LUCK:
-  1:
-    minLevel: 15
-    maxLevel: 65
-  2:
-    minLevel: 24
-    maxLevel: 74
-  3:
-    minLevel: 33
-    maxLevel: 83
+  - 1:
+      minLevel: 15
+      maxLevel: 65
+  - 2:
+      minLevel: 24
+      maxLevel: 74
+  - 3:
+      minLevel: 33
+      maxLevel: 83
 LURE:
-  1:
-    minLevel: 15
-    maxLevel: 65
-  2:
-    minLevel: 24
-    maxLevel: 74
-  3:
-    minLevel: 33
-    maxLevel: 83
+  - 1:
+      minLevel: 15
+      maxLevel: 65
+  - 2:
+      minLevel: 24
+      maxLevel: 74
+  - 3:
+      minLevel: 33
+      maxLevel: 83
 OXYGEN:
   - 1:
-    - minLevel: 10
-    - maxLevel: 40
+      - minLevel: 10
+      - maxLevel: 40
   - 2:
-    - minLevel: 20
-    - maxLevel: 50
+      - minLevel: 20
+      - maxLevel: 50
   - 3:
-    - minLevel: 30
-    - maxLevel: 60
+      - minLevel: 30
+      - maxLevel: 60
 PROTECTION_ENVIRONMENTAL:
   - 1:
-    - minLevel: 1
-    - maxLevel: 12
+      minLevel: 1
+      maxLevel: 12
   - 2:
-    - minLevel: 12
-    - maxLevel: 23
+      minLevel: 12
+      maxLevel: 23
   - 3:
-    - minLevel: 23
-    - maxLevel: 34
+      minLevel: 23
+      maxLevel: 34
   - 4:
-    - minLevel: 34
-    - maxLevel: 45
+      minLevel: 34
+      maxLevel: 45
 PROTECTION_EXPLOSIONS:
   - 1:
       minLevel: 5
       maxLevel: 13
   - 2:
-    - minLevel: 13
-    - maxLevel: 21
+      minLevel: 13
+      maxLevel: 21
   - 3:
-    - minLevel: 21
-    - maxLevel: 29
+      minLevel: 21
+      maxLevel: 29
   - 4:
-    - minLevel: 29
-    - maxLevel: 37
+      minLevel: 29
+      maxLevel: 37
 PROTECTION_FALL:
   - 1:
-    - minLevel: 5
-    - maxLevel: 11
+      minLevel: 5
+      maxLevel: 11
   - 2:
-    - minLevel: 11
-    - maxLevel: 17
+      minLevel: 11
+      maxLevel: 17
   - 3:
-    - minLevel: 17
-    - maxLevel: 23
+      minLevel: 17
+      maxLevel: 23
   - 4:
-    - minLevel: 23
-    - maxLevel: 29
+      minLevel: 23
+      maxLevel: 29
 PROTECTION_FIRE:
   - 1:
-    - minLevel: 10
-    - maxLevel: 18
+      minLevel: 10
+      maxLevel: 18
   - 2:
-    - minLevel: 18
-    - maxLevel: 26
+      minLevel: 18
+      maxLevel: 26
   - 3:
-    - minLevel: 26
-    - maxLevel: 34
+      minLevel: 26
+      maxLevel: 34
   - 4:
-    - minLevel: 34
-    - maxLevel: 42
+      minLevel: 34
+      maxLevel: 42
 PROTECTION_PROJECTILE:
   - 1:
-    - minLevel: 3
-    - maxLevel: 9
+      minLevel: 3
+      maxLevel: 9
   - 2:
-    - minLevel: 9
-    - maxLevel: 15
+      minLevel: 9
+      maxLevel: 15
   - 3:
-    - minLevel: 15
-    - maxLevel: 21
+      minLevel: 15
+      maxLevel: 21
   - 4:
-    - minLevel: 21
-    - maxLevel: 27
+      minLevel: 21
+      maxLevel: 27
 SILK_TOUCH:
-  1:
-    minLevel: 15
-    maxLevel: 65
+  - 1:
+      minLevel: 15
+      maxLevel: 65
 THORNS:
   - 1:
-    - minLevel: 10
-    - maxLevel: 60
+      minLevel: 10
+      maxLevel: 60
   - 2:
-    - minLevel: 30
-    - maxLevel: 70
+      minLevel: 30
+      maxLevel: 70
   - 3:
-    - minLevel: 50
-    - maxLevel: 80
+      minLevel: 50
+      maxLevel: 80
 WATER_WORKER:
   - 1:
-    - minLevel: 1
-    - maxLevel: 41
+      minLevel: 1
+      maxLevel: 41

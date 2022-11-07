@@ -29,6 +29,7 @@ public class OnEnchant implements Listener {
         ArrayList<String> itemTypes = selectItemTypes(event.getItem().getType());
         ArrayList<CustomEnchant> selectedEnchants = selectEnchants(modifiedLevel, itemTypes);
 
+        System.out.println(event.getItem().getType());
 
         event.getEnchantsToAdd().clear();
 
