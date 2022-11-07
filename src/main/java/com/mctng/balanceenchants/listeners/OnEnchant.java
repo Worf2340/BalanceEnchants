@@ -34,7 +34,6 @@ public class OnEnchant implements Listener {
         event.getEnchantsToAdd().clear();
 
         for (CustomEnchant enchant: selectedEnchants) {
-            System.out.println(enchant.getName() + " " + enchant.getPowerLevel());
             event.getEnchantsToAdd().put(Enchantment.getByName(enchant.getName()), enchant.getPowerLevel());
         }
 

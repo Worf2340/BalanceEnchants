@@ -75,17 +75,17 @@ public final class BalanceEnchants extends JavaPlugin {
         this.itemTypesMap = new HashMap<>();
 
         this.itemTypesMap.put("ARMOR_ALL", new String[]{"HELMET", "CHESTPLATE",
-                "LEGGINGS", "BOOTS"});
-        this.itemTypesMap.put("ARMOR_BOOTS", new String[]{"BOOTS"});
-        this.itemTypesMap.put("ARMOR_HELMET", new String[]{"HELMET"});
+                "LEGGINGS", "BOOTS", "BOOK"});
+        this.itemTypesMap.put("ARMOR_BOOTS", new String[]{"BOOTS"," BOOK"});
+        this.itemTypesMap.put("ARMOR_HELMET", new String[]{"HELMET", "BOOK"});
 
-        this.itemTypesMap.put("SWORD", new String[]{"SWORD"});
+        this.itemTypesMap.put("SWORD", new String[]{"SWORD", "BOOK"});
 
-        this.itemTypesMap.put("BOW", new String[]{"BOW"});
+        this.itemTypesMap.put("BOW", new String[]{"BOW", "BOOK"});
 
-        this.itemTypesMap.put("TOOL", new String[]{"PICKAXE", "SPADE", "AXE"});
+        this.itemTypesMap.put("TOOL", new String[]{"PICKAXE", "SPADE", "AXE", "BOOK"});
 
-        this.itemTypesMap.put("ROD", new String[]{"FISHING_ROD"});
+        this.itemTypesMap.put("ROD", new String[]{"FISHING_ROD", "BOOK"});
 
         return itemTypesMap;
     }
