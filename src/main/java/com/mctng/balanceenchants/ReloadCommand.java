@@ -18,9 +18,13 @@ public class ReloadCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
 
-        if (args.length != 1 | !Objects.equals(args[0], "reload")) {
+        if (args.length != 1) {
             commandSender.sendMessage(ChatColor.RED + "Invalid Command!");
-            return false;
+            return true;
+        }
+        if (!Objects.equals(args[0], "reload")) {
+            commandSender.sendMessage(ChatColor.RED + "Invalid Command!");
+            return true;
         }
 
         this.plugin.createWeightsConfig();
