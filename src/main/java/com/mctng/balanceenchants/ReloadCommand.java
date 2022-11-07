@@ -1,4 +1,4 @@
-package com.mctng.customizeenchants;
+package com.mctng.balanceenchants;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -9,9 +9,9 @@ import java.util.Objects;
 
 public class ReloadCommand implements CommandExecutor {
 
-    CustomizeEnchants plugin;
+    BalanceEnchants plugin;
 
-    public ReloadCommand(CustomizeEnchants plugin) {
+    public ReloadCommand(BalanceEnchants plugin) {
         this.plugin = plugin;
     }
 

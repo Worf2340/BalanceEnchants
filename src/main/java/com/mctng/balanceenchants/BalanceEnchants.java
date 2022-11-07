@@ -1,7 +1,6 @@
-package com.mctng.customizeenchants;
+package com.mctng.balanceenchants;
 
-import com.mctng.customizeenchants.listeners.OnEnchant;
-import com.mctng.customizeenchants.listeners.OnPrepareEnchant;
+import com.mctng.balanceenchants.listeners.OnEnchant;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -11,7 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.*;
 
-public final class CustomizeEnchants extends JavaPlugin {
+public final class BalanceEnchants extends JavaPlugin {
 
     private File levelsConfigFile;
     private FileConfiguration levelsConfig;
@@ -29,7 +28,6 @@ public final class CustomizeEnchants extends JavaPlugin {
         this.itemTypesMap = generateItemTypesMap();
         this.conflictingEnchantsMap = generateConflictingEnchantsMap();
         this.getCommand("ce").setExecutor(new ReloadCommand(this));
-        this.getServer().getPluginManager().registerEvents(new OnPrepareEnchant(this), this);
         this.getServer().getPluginManager().registerEvents(new OnEnchant(this), this);
 
 

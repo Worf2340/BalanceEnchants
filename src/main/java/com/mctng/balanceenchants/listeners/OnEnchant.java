@@ -1,7 +1,7 @@
-package com.mctng.customizeenchants.listeners;
+package com.mctng.balanceenchants.listeners;
 
-import com.mctng.customizeenchants.CustomizeEnchants;
-import com.mctng.customizeenchants.CustomEnchant;
+import com.mctng.balanceenchants.BalanceEnchants;
+import com.mctng.balanceenchants.CustomEnchant;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.EventHandler;
@@ -11,9 +11,9 @@ import org.bukkit.event.enchantment.EnchantItemEvent;
 import java.util.*;
 
 public class OnEnchant implements Listener {
-    private CustomizeEnchants plugin;
+    private BalanceEnchants plugin;
 
-    public OnEnchant(CustomizeEnchants plugin) {
+    public OnEnchant(BalanceEnchants plugin) {
         this.plugin = plugin;
     }
 

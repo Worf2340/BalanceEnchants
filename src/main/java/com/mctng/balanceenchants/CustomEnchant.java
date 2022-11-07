@@ -1,4 +1,4 @@
-package com.mctng.customizeenchants;
+package com.mctng.balanceenchants;
 
 public class CustomEnchant {
     private String name;
