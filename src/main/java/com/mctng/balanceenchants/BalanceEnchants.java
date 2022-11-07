@@ -27,7 +27,7 @@ public final class BalanceEnchants extends JavaPlugin {
         this.itemEnchantsMap = generateItemEnchantsMap();
         this.itemTypesMap = generateItemTypesMap();
         this.conflictingEnchantsMap = generateConflictingEnchantsMap();
-        this.getCommand("ce").setExecutor(new ReloadCommand(this));
+        this.getCommand("be").setExecutor(new ReloadCommand(this));
         this.getServer().getPluginManager().registerEvents(new OnEnchant(this), this);
 
 

@@ -20,6 +20,7 @@ public class ReloadCommand implements CommandExecutor {
 
         if (args.length != 1 | !Objects.equals(args[0], "reload")) {
             commandSender.sendMessage(ChatColor.RED + "Invalid Command!");
+            return false;
         }
 
         this.plugin.createWeightsConfig();

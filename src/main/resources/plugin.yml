@@ -4,7 +4,7 @@ version: 1.0
 author: Worf2340
 
 commands:
-  ce:
-    description: /ce reload
-    usage: /ce reload
-    permission: ce.reload
+  be:
+    description: /be reload
+    usage: /be reload
+    permission: be.reload
