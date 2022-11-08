@@ -29,6 +29,7 @@ public final class BalanceEnchants extends JavaPlugin {
 
     }
 
+
     private FileConfiguration getLevelsConfig() {
         return levelsConfig;
     }
@@ -41,6 +42,9 @@ public final class BalanceEnchants extends JavaPlugin {
         return enchantmentDataHashMap;
     }
 
+    /**
+     * Load the levels.yml file. If the file does not exist, create it based on default file.
+     */
     private void createLevelsConfig() {
         File levelsConfigFile = new File(getDataFolder(), "levels.yml");
         if (!levelsConfigFile.exists()) {
@@ -55,6 +59,9 @@ public final class BalanceEnchants extends JavaPlugin {
         }
     }
 
+    /**
+     * Load the weights.yml file. If the file does not exist, create it based on default file.
+     */
     private void createWeightsConfig() {
         File weightsConfigFile = new File(getDataFolder(), "weights.yml");
         if (!weightsConfigFile.exists()) {
@@ -69,6 +76,9 @@ public final class BalanceEnchants extends JavaPlugin {
         }
     }
 
+    /**
+     * Refreshes EnchantmentData map based on file changes.
+     */
     public void updateEnchantmentDataHashMap() {
         createLevelsConfig();
         createWeightsConfig();
@@ -77,6 +87,10 @@ public final class BalanceEnchants extends JavaPlugin {
     }
 
 
+    /**
+     * Reads levels.yml and weights.yml file, and parses each enchantment's weight and applicable power levels.
+     * @return
+     */
     public HashMap<Enchantment, EnchantmentData> readConfigs() {
         HashMap<Enchantment, EnchantmentData> enchantmentDataHashMap = new HashMap<>();
 

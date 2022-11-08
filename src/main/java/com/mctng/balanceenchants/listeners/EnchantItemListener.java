@@ -40,13 +40,24 @@ public class EnchantItemListener implements Listener {
 
     }
 
+    /**
+     * Returns random double between 0.85 and 1.15 to be used as the random bonus in enchantment calculations
+     * @return a random double between 0.85 and 1.15
+     */
     private double generateRandomBonus() {
         Random rand = new Random();
 
         return 1 + (rand.nextDouble() + rand.nextDouble() - 1) * .15;
     }
 
-    // Returns all possible enchantments for a given item based on item type
+
+    /**
+     * Returns the possible enchantments for a given item. This takes into account the type of item and uses the
+     * enchantment levels in levels.yml.
+     * @param item
+     * @param modifiedLevel
+     * @return a list of possible enchantments
+     */
     private ArrayList<Enchantment> getPossibleEnchantments(ItemStack item, double modifiedLevel) {
         ArrayList<Enchantment> possibleEnchantments = new ArrayList<>();
         HashMap<Enchantment, Integer> enchantmentPowerLevels =
@@ -62,6 +73,12 @@ public class EnchantItemListener implements Listener {
 
     }
 
+    /**
+     * Uses the levels.yml file to return the applicable power level for a given enchantment and enchantment level.
+     * @param enchantment
+     * @param modifiedLevel
+     * @return the calculated power level
+     */
     private int calculateEnchantmentPowerLevel(Enchantment enchantment, double modifiedLevel) {
         int calculatedPowerLevel = 0;
 
@@ -79,7 +96,11 @@ public class EnchantItemListener implements Listener {
         return calculatedPowerLevel;
     }
 
-    // Calculate valid enchants based on item type and enchantment level
+    /**
+     * Gets applicable power levels for all enchantments, based on levels.yml file
+     * @param modifiedLevel
+     * @return a map of enchantments to power levels
+     */
     private HashMap<Enchantment, Integer> calculateEnchantmentPowerLevels(double modifiedLevel) {
         HashMap<Enchantment, Integer> enchantmentPowerLevels = new HashMap<>();
 
@@ -93,6 +114,11 @@ public class EnchantItemListener implements Listener {
         return enchantmentPowerLevels;
     }
 
+    /**
+     * Returns list of conflicting enchantments for a given list of enchantments
+     * @param enchantments
+     * @return
+     */
     private ArrayList<Enchantment> calculateConflictingEnchantments(ArrayList<Enchantment> enchantments) {
         ArrayList<Enchantment> conflictingEnchantments = new ArrayList<>();
 
@@ -109,6 +135,14 @@ public class EnchantItemListener implements Listener {
     }
 
     // Select multiple enchants via selectEnchant method and probability based on modified enchantment level method
+
+    /**
+     * Returns a list of selected enchantments via the selectEnchantment() method. At least one enchantment is always
+     * selected. The subsequent enchantments are selected with decreasing probability.
+     * @param modifiedLevel
+     * @param item
+     * @return
+     */
     private ArrayList<Enchantment> selectEnchantments(double modifiedLevel, ItemStack item) {
         ArrayList<Enchantment> selectedEnchantments = new ArrayList<>();
         ArrayList<Enchantment> possibleEnchantments = getPossibleEnchantments(item, modifiedLevel);
@@ -151,7 +185,11 @@ public class EnchantItemListener implements Listener {
 
     }
 
-    // Select single enchant randomly based on weights
+    /**
+     * Returns a single randomly selected enchantment, weighted with weights from weights.yml file.
+     * @param possibleEnchantments a list of possible enchantments to select from
+     * @return
+     */
     private Enchantment selectEnchantment(ArrayList<Enchantment> possibleEnchantments) {
         Enchantment selectedEnchantment;
 

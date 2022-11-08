@@ -1,9 +1,10 @@
 package com.mctng.balanceenchants;
 
-import org.bukkit.enchantments.Enchantment;
-
 import java.util.HashMap;
 
+/**
+ * Data storage class for enchantments map. Stores the weight and map of power levels to enchantment levels.
+ */
 public class EnchantmentData {
 
     private final int weight;

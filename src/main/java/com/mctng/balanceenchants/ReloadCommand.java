@@ -7,6 +7,9 @@ import org.bukkit.command.CommandSender;
 
 import java.util.Objects;
 
+/**
+ * Reloads the levels.yml and weights.yml files
+ */
 public class ReloadCommand implements CommandExecutor {
 
     BalanceEnchants plugin;
@@ -27,7 +30,6 @@ public class ReloadCommand implements CommandExecutor {
             return true;
         }
 
-        this.plugin.updateEnchantmentDataHashMap();
         this.plugin.updateEnchantmentDataHashMap();
 
         commandSender.sendMessage(ChatColor.GREEN + "Reloaded enchantment weights and levels.");
