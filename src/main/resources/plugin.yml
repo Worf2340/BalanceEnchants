@@ -1,6 +1,6 @@
 name: BalanceEnchants
 main: com.mctng.balanceenchants.BalanceEnchants
-version: 1.0
+version: 1.1
 author: Worf2340
 
 commands:
