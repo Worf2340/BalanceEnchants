@@ -148,10 +148,15 @@ public class EnchantItemListener implements Listener {
         ArrayList<Enchantment> possibleEnchantments = getPossibleEnchantments(item, modifiedLevel);
 
         // Select first enchant
-        selectedEnchantments.add(selectEnchantment(possibleEnchantments));
+        Enchantment selectedEnchantment = selectEnchantment(possibleEnchantments);
+
+        if (selectedEnchantment != null) {
+            selectedEnchantments.add(selectedEnchantment);
+        }
 
         // Select further enchants with decreasing probability
         while (true) {
+
             double p = (modifiedLevel +1)/50;
             Random rand = new Random();
 
@@ -173,7 +178,12 @@ public class EnchantItemListener implements Listener {
                     break;
                 }
 
-                selectedEnchantments.add(selectEnchantment(possibleEnchantments));
+                selectedEnchantment = selectEnchantment(possibleEnchantments);
+
+                if (selectedEnchantment != null) {
+                    selectedEnchantments.add(selectedEnchantment);
+                }
+
                 modifiedLevel = modifiedLevel / 2;
             }
             else {
@@ -201,6 +211,11 @@ public class EnchantItemListener implements Listener {
 
         // TODO: SEED
         Random rand = new Random();
+
+        if (sumWeight == 0) {
+            return null;
+        }
+
         int w = rand.nextInt(sumWeight);
 
         for (Enchantment enchantment : possibleEnchantments) {
@@ -208,7 +223,6 @@ public class EnchantItemListener implements Listener {
 
             if (w < 0) {
                 selectedEnchantment = enchantment;
-
                 return selectedEnchantment;
             }
         }
