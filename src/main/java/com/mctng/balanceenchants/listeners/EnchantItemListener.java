@@ -1,6 +1,7 @@
 package com.mctng.balanceenchants.listeners;
 
 import com.mctng.balanceenchants.BalanceEnchants;
+import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -59,15 +60,20 @@ public class EnchantItemListener implements Listener {
      * @return a list of possible enchantments
      */
     private ArrayList<Enchantment> getPossibleEnchantments(ItemStack item, double modifiedLevel) {
+
         ArrayList<Enchantment> possibleEnchantments = new ArrayList<>();
         HashMap<Enchantment, Integer> enchantmentPowerLevels =
                 calculateEnchantmentPowerLevels(modifiedLevel);
 
+
         for (Enchantment enchantment : Enchantment.values()) {
-            if (enchantment.canEnchantItem(item) && enchantmentPowerLevels.get(enchantment) > 0) {
-                possibleEnchantments.add(enchantment);
+            if (item.getType() == Material.BOOK || enchantment.canEnchantItem(item)) {
+                if (enchantmentPowerLevels.get(enchantment) > 0) {
+                    possibleEnchantments.add(enchantment);
+                }
             }
         }
+
 
         return possibleEnchantments;
 
@@ -147,11 +153,16 @@ public class EnchantItemListener implements Listener {
         ArrayList<Enchantment> selectedEnchantments = new ArrayList<>();
         ArrayList<Enchantment> possibleEnchantments = getPossibleEnchantments(item, modifiedLevel);
 
-        // Select first enchant
+        // Always Select first enchant
         Enchantment selectedEnchantment = selectEnchantment(possibleEnchantments);
 
         if (selectedEnchantment != null) {
             selectedEnchantments.add(selectedEnchantment);
+        }
+
+        // Books can only get one enchantment
+        if (item.getType() == Material.BOOK) {
+            return selectedEnchantments;
         }
 
         // Select further enchants with decreasing probability
