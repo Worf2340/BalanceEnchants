@@ -89,7 +89,7 @@ public final class BalanceEnchants extends JavaPlugin {
 
     /**
      * Reads levels.yml and weights.yml file, and parses each enchantment's weight and applicable power levels.
-     * @return
+     * @return a map of enchantments to their weights and power levels.
      */
     public HashMap<Enchantment, EnchantmentData> readConfigs() {
         HashMap<Enchantment, EnchantmentData> enchantmentDataHashMap = new HashMap<>();
